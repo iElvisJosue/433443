@@ -18,8 +18,8 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/iElvisJosue/FrontEnd-Mentor-Challenges/tree/main/ecommerce-product-page-main)
-- # Live Site URL: [Page](https://ielvisjosue.github.io/FrontEnd-Mentor-Challenges/ecommerce-product-page-main)
+- Solution URL: [Solution](https://github.com/iElvisJosue/Frontend_Mentor_Challenges/tree/main/ecommerce-product-page-main)
+- Live Site URL: [Page](https://ielvisjosue.github.io/Frontend_Mentor_Challenges/ecommerce-product-page-main)
 
 ### Built with
 
