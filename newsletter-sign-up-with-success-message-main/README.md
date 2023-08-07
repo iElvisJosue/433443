@@ -26,8 +26,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/iElvisJosue/FrontEnd-Mentor-Challenges/tree/main/newsletter-sign-up-with-success-message-main)
-- Live Site URL: [Page](https://ielvisjosue.github.io/FrontEnd-Mentor-Challenges/newsletter-sign-up-with-success-message-main/)
+- Solution URL: [Solution](https://github.com/iElvisJosue/Frontend_Mentor_Challenges/tree/main/newsletter-sign-up-with-success-message-main)
+- Live Site URL: [Page](https://ielvisjosue.github.io/Frontend_Mentor_Challenges/newsletter-sign-up-with-success-message-main/)
 
 ## My process
 
