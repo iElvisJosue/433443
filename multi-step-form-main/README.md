@@ -24,8 +24,8 @@ This is a solution to the [Multi-step form challenge on Frontend Mentor](https:/
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/iElvisJosue/FrontEnd-Mentor-Challenges/tree/main/multi-step-form-main)
-- Live Site URL: [Page](https://ielvisjosue.github.io/FrontEnd-Mentor-Challenges/multi-step-form-main/)
+- Solution URL: [Solution](https://github.com/iElvisJosue/Frontend_Mentor_Challenges/tree/main/multi-step-form-main)
+- Live Site URL: [Page](https://ielvisjosue.github.io/Frontend_Mentor_Challenges/multi-step-form-main/)
 
 ## My process
 
