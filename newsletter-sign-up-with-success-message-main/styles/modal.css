@@ -1,0 +1,62 @@
+.Container__Modal{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 350px;
+    min-height: 380px;
+    height: auto;
+    border-radius: 25px;
+    padding: 30px;
+    background: var(--White);
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+}
+.Container__Modal.Show{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+}
+
+/* SECTION MODAL CONTENT */
+.Container__Modal-Content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Container__Modal img{
+    width: 45px;
+    height: 45px;
+}
+.Container__Modal-Title{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-size: 40px;
+    color: var(--DarkSlateGrey);
+}
+.Container__Modal-Text{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-size: 12px;
+    color: var(--DarkSlateGrey);
+    line-height: 18px;
+}
+
+
+
+/* START MODAL BUTTON  */
+.Container__Modal-Button{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    height: 45px;
+    color: var(--White);
+    font-size: 12px;
+    font-weight: 700;
+    background: var(--DarkSlateGrey);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    transition: .5s ease background;
+}
+.Container__Modal-Button:hover{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    cursor: pointer;
+    background: var(--CharcoalGrey);
+}

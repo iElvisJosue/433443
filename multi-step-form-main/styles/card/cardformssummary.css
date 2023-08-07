@@ -1,0 +1,102 @@
+.Container__Card-Forms-Summary
+{
+    display: none;
+}
+/* CLASS ADDED BY JS */
+.Container__Card-Forms-Summary.Show
+{
+    display: block;
+}
+
+.Summary-Container
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    padding: 20px;
+    background-color: var(--Magnolia);
+    border-radius: 10px 10px 0 0;
+    
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Summary-Details,
+.Summary-Addons
+{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Summary-Services
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    padding: 20px;
+    background-color: var(--Magnolia);
+    border-radius: 0 0 10px 10px;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Summary-Details-Plan
+{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.Plan-Name,
+.Plan-Prize
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--MarineBlue);
+}
+.Plan-Change
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    color: var(--CoolGray);
+    cursor: pointer;
+    transition: .5s ease color;
+}
+.Plan-Change:hover
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    color: var(--PurplishBlue);
+}
+.Container__Card-Forms-Summary hr
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    background-color: var(--LightGray);
+    height: 1px;
+    border: none;
+}
+.Summary-Addons-Service,
+.Summary-Total-Text
+{
+    color: var(--CoolGray);
+}
+.Service-Prize
+{
+    color: var(--MarineBlue);
+}
+.Summary-Total
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    padding: 30px 20px;
+    background-color: var(--White);
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Service-Total-Prize
+{
+    font-size: 20px;
+    color: var(--PurplishBlue);
+    font-weight: 700;
+}

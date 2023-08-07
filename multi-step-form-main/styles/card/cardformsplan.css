@@ -1,0 +1,139 @@
+/* SECTION CARD FORMS SECTION PLAN */
+.Container__Card-Forms-Plan
+{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    display: none;
+}
+/* CLASS ADDED BY JS */
+.Container__Card-Forms-Plan.Show
+{
+    display: flex;
+}
+
+
+/* SECTION PLAN OPTIONS */
+.Plan-Options
+{
+    /* ALIGN (FLEX/GRID) */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.Plan-Options-Item
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    min-height: 150px;
+    height: auto;
+    padding: 10px;
+    border: 1px solid var(--LightGray);
+    border-radius: 10px;
+    transition: .5s ease border-color, background;
+
+    /* ALIGN (FLEX/GRID) */
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    cursor: pointer;
+}
+/* CLASS ADDE BY JS */
+.Plan-Options-Item.Selected
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    border-color: var(--PurplishBlue);
+    background: var(--Magnolia);
+}
+.Item-Icon
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    text-align: left;
+    pointer-events: none;
+}
+.Item-Details
+{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    pointer-events: none;
+}
+.Item-Details-Title
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-size: 18px;
+    color: var(--MarineBlue);
+    font-weight: 700;
+}
+.Item-Details-Price
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    color: var(--CoolGray);
+}
+.Item-Details-Deal
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-size: 14px;
+    color: var(--MarineBlue);
+    font-weight: 500;
+    display: none;
+}
+/* CLASS ADDED BY JS */
+.Item-Details-Deal.Active
+{
+    display: flex;
+}
+
+
+/* SECTION PLAN TYPES */
+.Plan-Type
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    height: 50px;
+    background: var(--Magnolia);
+    border-radius: 10px;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.Plan-Type-Monthly,
+.Plan-Type-Yearly
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-weight: 500;
+    color: var(--CoolGray);
+}
+.Plan-Type-Button
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    position: relative;
+    width: 50px;
+    height: 25px;
+    background: var(--MarineBlue);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+.Plan-Type-Button::after
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: calc(50% - 7.5px);
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    transition: .5s ease all;
+}
+.Plan-Type-Button.Active::after
+{
+    transform: translateX(calc(100% + 10px));
+}

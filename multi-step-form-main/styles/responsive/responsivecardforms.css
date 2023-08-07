@@ -1,0 +1,45 @@
+@media (width <= 910px){
+    .Container__Card-Forms 
+    {
+        position: absolute;
+        padding: 20px;
+        top: 80px;
+        left: 5%;
+        width: 90%;
+        background: var(--White);
+        border-radius: 15px;
+    }
+    .Container__Card-Forms-Header
+    {
+        margin-top: 0;
+    }
+    .Container__Card-Forms-Footer
+    {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 5%;
+        background: var(--White);
+    }
+
+
+
+    /* RESPONSIVE DE LA SECCION PLAN */
+    .Plan-Options
+    {
+        grid-template-columns: 1fr;
+    }
+    .Plan-Options-Item
+    {
+        flex-direction: row;
+        min-height: 75px;
+        align-items: center;
+        gap: 15px;
+    }
+    .Plan-Options-Item.Active
+    {
+        display: flex;
+        align-items: flex-start;
+    }
+}

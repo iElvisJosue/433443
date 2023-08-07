@@ -1,0 +1,11 @@
+@media (width <= 1440px){
+    .Container{
+        width: 100%;
+    }
+}
+@media (width <= 910px){
+    .Container{
+        align-items: flex-start;
+        background: var(--Magnolia);
+    }
+}

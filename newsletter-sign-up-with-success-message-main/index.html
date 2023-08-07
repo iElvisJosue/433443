@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <main class="Container" id="Container">
+    <!-- START SECTION CARD -->
+    <div class="Container__Card" id="Container__Card">
+      <!-- START SECTION CARD FORM -->
+      <article class="Container__Card-Form" id="Container__Card-Form">
+        <!-- START SECTION CARD FORM TITLE -->
+        <h1 class="Form-Title" id="Form-Title">
+          Stay updated!
+        </h1>
+        <!-- START SECTION CARD FORM SUBTITLE -->
+        <p class="Form-SubTitle" id="Form-SubTitle">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <!-- START SECTION CARD FORM DETAILS -->
+        <section class="Form-Details" id="Form-Details">
+          <div class="Form-Details-List">
+            <div class="Form-Details-List-Image">
+              <img src="./images/icon-list.svg" alt="Icon List">
+            </div>
+            <p class="Form-Details-List-Text">
+              Product discovery and building what matters
+            </p>
+          </div>
+          <div class="Form-Details-List">
+            <div class="Form-Details-List-Image">
+              <img src="./images/icon-list.svg" alt="Icon List">
+            </div>
+            <p class="Form-Details-List-Text">
+              Measuring to ensure updates are success
+            </p>
+          </div>
+          <div class="Form-Details-List">
+            <div class="Form-Details-List-Image">
+              <img src="./images/icon-list.svg" alt="Icon List">
+            </div>
+            <p class="Form-Details-List-Text">
+              And much more!
+            </p>
+          </div>
+        </section>
+        <!-- START SECTION CARD FORM CHECK EMAIL -->
+        <section class="Form-CheckEmail" id="Form-CheckEmail">
+          <div class="Form-CheckEmail-Text">
+            <p class="Form-CheckEmail-Text-Title">
+              Email address
+            </p>
+            <p class="Form-CheckEmail-Text-Caution">
+              Valid email required
+            </p>
+          </div>
+          <input type="text" name="Email" id="Email" class="Form-CheckEmail-Input" placeholder="email@company.com">
+        </section>
+        <!-- START FORM BUTTON -->
+        <button class="Form-Button" id="Form-Button">
+          Suscribe to monthly newsletter
+        </button>
+      </article>
+
+      <!-- START BGIMAGE -->
+      <div class="Container__Card-Form-Image" alt="Sign Up Desktop">
+      </div>
+    </div>
+
+    <!-- START SECTION MODAL-->
+    <div class="Container__Modal" id="Container__Modal">
+      <div class="Container__Modal-Content" id="Container__Modal-Content">
+        <img src="./images/icon-list.svg" alt="Modal Success">
+        <h1 class="Container__Modal-Title" id="Container__Modal-Title">
+          Thanks for subscribing!
+        </h1>
+        <p class="Container__Modal-Text" id="Container__Modal-Text">
+          A confirmation email hass been sent to 
+          <b class="Text-Email"></b>. 
+          Please open it and click the button inside to confirm your subscription.
+        </p>
+      </div>
+      <button class="Container__Modal-Button" id="Container__Modal-Button">
+        Dismiss message
+      </button>
+    </div>
+  </main>
+
+  <!-- SCRIPT WITH FUNCTIONS -->
+  <script src="./functions/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body onload="showTotalProducts(), setClassPreviewImage()">
+
+  <div class="Cover">
+    <article class="Cover__Content">
+      <div class="Cover__Content--Close">
+        <ion-icon name="close-sharp" onclick="hiddeCover()" role="img"></ion-icon>
+      </div>
+      <picture class="Cover__Content--Image">
+        <button class="Previous--Button" onclick="previousImageCover()">
+          <ion-icon name="chevron-back-outline" role="img"></ion-icon>
+        </button>
+        <img src="./images/image-product-1.jpg" alt="Product" class="Image--Cover">
+        <button class="Next--Button" onclick="nextImageCover()">
+          <ion-icon name="chevron-forward-outline" role="img"></ion-icon>
+        </button>
+      </picture>
+      <section class="Cover__Content--Preview">
+        <picture class="Cover__Content--Preview--Picture">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="Preview 1" class="Content--Preview" onclick="changeMainImageCover(0)">
+        </picture>
+        <picture class="Cover__Content--Preview--Picture">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="Preview 2" class="Content--Preview" onclick="changeMainImageCover(1)">
+        </picture>
+        <picture class="Cover__Content--Preview--Picture">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="Preview 3" class="Content--Preview" onclick="changeMainImageCover(2)">
+        </picture>
+        <picture class="Cover__Content--Preview--Picture">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="Preview 4" class="Content--Preview" onclick="changeMainImageCover(3)">
+        </picture>
+      </section>
+    </article>
+  </div>
+
+  <!-- START CONTAINER -->
+  <main class="Container">
+
+    <!-- STAR MENU -->
+    <menu class="Container__Menu">
+      <ul class="Container__Menu--Content">
+        <li><img src="./images/icon-close.svg" alt="Close menu" onclick="closeMenu()"></li>
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </menu>
+
+    <!-- START CART MODAL -->
+    <aside class="Container__Cart">
+      <h1 class="Container__Cart--Title">
+        Cart
+      </h1>
+      <section class="Container__Cart--Content">
+        <h1 class="Container__Cart--Content--Empty">Your cart is empty.</h1>
+        <div class="Container__Cart--Content--Product">
+          <picture class="Content--Product--Image">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="Cart Product">
+          </picture>
+          <span class="Content--Product--Details">
+            <p class="Product--Details--Name">
+              Fall Limited Edition Sneakers
+            </p>
+            <p class="Product--Details--Price">
+            </p>
+          </span>
+          <picture class="Cart--Product--Delete" onclick="deleteProductsToCart()">
+            <img src="./images/icon-delete.svg" alt="Delete Product Cart">
+          </picture>
+        </div>
+        <button class="Container__Cart--Content--Button">Checkout</button>
+      </section>
+    </aside>
+
+    <!-- MODAL 0 PRODUCTOS -->
+    <div class="Container__Modal">
+      <h1>Please add at least 1 product</h1>
+    </div>
+
+    <!-- START HEARDER WITH MENU -->
+    <header class="Container__Header">
+      <section class="Container__Header--Logo">
+        <img src="./images/icon-menu.svg" alt="Menu" class="Logo--Menu" onclick="showMenu()">
+        <img src="./images/logo.svg" alt="Logo" class="Logo--Image">
+      </section>
+      <section class="Container__Header--Options">
+        <ul class="Menu--Options">
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+        <div class="Menu--CartProfile">
+          <span class="Options--Cart" onclick="showCart()">
+            <img src="./images/icon-cart.svg" alt="Cart">
+            <p class="Options--Cart--Amount">
+            </p>
+          </span>
+          <img src="./images/image-avatar.png" alt="Picture Profile" class="Options--Profile">
+        </div>
+      </section>
+    </header>
+
+    <!-- START CONTAINER PRODUCT -->
+    <article class="Container__Product">
+      <section class="Container__Product--Image">
+        <picture class="Image-Principal">
+          <button class="Image-Principal--Previous--Button" onclick="previousImageMain()">
+            <ion-icon name="chevron-back-outline" role="img"></ion-icon>
+          </button>
+          <img src="./images/image-product-1.jpg" alt="Product" class="Product-Image" onclick="showCover()">
+          <button class="Image-Principal--Next--Button" onclick="nextImageMain()">
+            <ion-icon name="chevron-forward-outline" role="img"></ion-icon>
+          </button>
+        </picture>
+        <div class="Images-Preview">
+          <picture class="Images-Preview-Product">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="Preview 1" class="Product-Preview-Image" onclick="changeMainImage(0)">
+          </picture>
+          <picture class="Images-Preview-Product">
+            <img src="./images/image-product-2-thumbnail.jpg" alt="Preview 2" class="Product-Preview-Image" onclick="changeMainImage(1)">
+          </picture>
+          <picture class="Images-Preview-Product">
+            <img src="./images/image-product-3-thumbnail.jpg" alt="Preview 3" class="Product-Preview-Image" onclick="changeMainImage(2)">
+          </picture>
+          <picture class="Images-Preview-Product">
+            <img src="./images/image-product-4-thumbnail.jpg" alt="Preview 4" class="Product-Preview-Image" onclick="changeMainImage(3)">
+          </picture>
+        </div>
+      </section>
+      <section class="Container__Product--Details">
+        <p class="Details--Company">
+          SNEAKER COMPANY
+        </p>
+        <h1 class="Details--Title">
+          Fall Limited Edition Sneakers
+        </h1>
+        <p class="Details--Description">
+          These low profile sneakers are you perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.
+        </p>
+        <span class="Details--Price">
+          <p class="Details--Price--Especial">
+            $125.00
+            <b class="Details--Price--Discount">50%</b>
+          </p>
+          <s class="Details--Price--Normal">
+            $250.00
+          </s>
+        </span>
+        <span class="Details--Buttons">
+          <span class="Details--Buttons--Add">
+            <button class="Details--Buttons--Minus" onclick="subtractProducts()">
+              <img src="./images/icon-minus.svg" alt="Minus">
+            </button>
+            <p class="Details--Buttons--Text">
+            </p>
+            <button class="Details--Buttons--Plus" onclick="addProducts()">
+              <img src="./images/icon-plus.svg" alt="Plus">
+            </button>
+          </span>
+          <button class="Details--Buttons--Cart" onclick="checkProductsToCart()">
+            <img src="./images/icon-cart-button.svg" alt="Cart">
+            Add to cart
+          </button>
+        </span>
+      </section>
+    </article>
+
+  </main>
+
+  <!-- IMPORTAMOS LOS ICONOS -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- FUNCTIONS -->
+  <script src="./functions/menu.js"></script>
+  <script src="./functions/cart.js"></script>
+  <script src="./functions/images.js"></script>
+</body>
+</html>

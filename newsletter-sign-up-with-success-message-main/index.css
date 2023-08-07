@@ -1,0 +1,28 @@
+/* IMPORTAMOS EL DISEÑO DEL CARD */
+@import url(./styles/card.css);
+/* IMPORTAMOS EL DISEÑO DEL MODAL */
+@import url(./styles/modal.css);
+/* IMPORTAMOS EL DISEÑO RESPONSIVE */
+@import url(./styles/responsive.css);
+
+:root
+{
+    --White: hsl(0, 0%, 100%);
+    --Tomato: hsl(4, 100%, 67%);
+    --Tomato2: #ffe8e6;
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    background: var(--CharcoalGrey);
+}

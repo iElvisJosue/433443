@@ -1,0 +1,12 @@
+@media (width <= 910px){
+    .Container__Card-Forms
+    {
+        justify-content: center;
+        padding: 80px 20px !important;
+    }
+    .Container__Card-Forms-Modal img
+    {
+        width: 60px;
+        height: 60  px;
+    }
+}

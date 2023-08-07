@@ -1,0 +1,59 @@
+/* SECTION CARD STEPS */
+.Container__Card-Steps
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    min-width: 250px;
+    border-radius: 10px;
+    padding: 40px 20px;
+
+    /* BACKGROUND */
+    background-image: url('../../images/bg-sidebar-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Container__Card-Steps-List
+{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.Container__Card-Steps-List-Number
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: var(--White);
+    font-weight: 700;
+    border: 1px solid var(--White);
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* FUNCION AGREGADAS DESDE EL JS */
+.Container__Card-Steps-List-Number.Active
+{
+    background: var(--LightBlue);
+    color: var(--MarineBlue);
+    border-color: var(--LightBlue);
+}
+.Container__Card-Steps-List-Text p:nth-child(1)
+{
+    color: var(--CoolGray);
+    font-size: 14px;
+    font-weight: 400;
+}
+.Container__Card-Steps-List-Text p:nth-child(2)
+{
+    color: var(--White);
+    font-weight: 500;
+}

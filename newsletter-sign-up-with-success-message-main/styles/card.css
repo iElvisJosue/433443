@@ -1,0 +1,168 @@
+/* SECTION MAIN CONTAINER */
+.Container{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    margin: auto;
+    width: 1440px;
+    height: 100vh;
+    background: var(--CharcoalGrey);
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* SECTION CARD */
+.Container__Card{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 650px;
+    height: 450px;
+    background: var(--White);
+    border-radius: 25px;
+    padding: 15px 20px;
+    transition: .5s ease all;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+}
+.Container__Card.Hidde{
+    /* ALIGN (FLEX/GRID) */
+    display: none;
+}
+
+
+/* SECTION CARD FORM */
+.Container__Card-Form{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 280px;
+    height: 100%;
+    margin: auto;
+    text-align: left;
+
+    
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+/* SECTION CARD FORM TITLE*/
+.Form-Title{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-size: 40px;
+    color: var(--DarkSlateGrey);
+}
+
+
+
+/* SECTION CARD FORM SUBTITLE */
+.Form-SubTitle{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-size: 12px;
+    color: var(--DarkSlateGrey);
+}
+
+
+
+/* SECTION CARD FORM DETAILS */
+.Form-Details{
+     /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Form-Details-List{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Form-Details-List-Image{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 15px;
+    height: 15px;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+}
+.Form-Details-List-Text{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-size: 12px;
+    color: var(--DarkSlateGrey);
+}
+
+
+
+/* SECTION CARD FORM CHECK EMAIL */
+.Form-CheckEmail-Text{
+    display: flex;
+    justify-content: space-between;
+}
+.Form-CheckEmail-Text-Title{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-weight: 700;
+    font-size: 10px;
+    color: var(--DarkSlateGrey);
+}
+.Form-CheckEmail-Text-Caution{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-weight: 700;
+    font-size: 10px;
+    color: var(--Tomato);
+    opacity: 0;
+    transition: .5s ease all;
+}
+.Form-CheckEmail-Text-Caution.Active{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    opacity: 1;
+}
+.Form-CheckEmail-Input{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 100%;
+    height: 45px;
+    margin-top: 5px;
+    padding: 0 20px;
+    border: 1px solid var(--Grey);
+    border-radius: 8px;
+    outline: none;
+    color: var(--Grey);
+    transition: .5s ease all;
+}
+.Form-CheckEmail-Input.Caution{
+    color: var(--Tomato);
+    border: 1px solid var(--Tomato); 
+    background: var(--Tomato2);
+}
+/* START FORM BUTTON  */
+.Form-Button{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    margin-bottom: 10px;
+    height: 45px;
+    color: var(--White);
+    font-size: 12px;
+    font-weight: 700;
+    background: var(--DarkSlateGrey);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    transition: .5s ease background;
+}
+.Form-Button:hover{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    cursor: pointer;
+    background: var(--CharcoalGrey);
+}
+
+/* SECTION CARD IMAGE */
+.Container__Card-Form-Image{
+    width: 280px;
+    background-image: url('../images/illustration-sign-up-desktop.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

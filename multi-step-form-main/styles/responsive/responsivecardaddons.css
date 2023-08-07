@@ -1,0 +1,15 @@
+@media (width <= 450px){
+    .Addons-Section-Check
+    {
+        min-width: 50px;
+    }
+    .Section-Title
+    {
+        font-size: 16px;
+    }
+    .Section-Details,
+    .Addons-Section-Prize
+    {
+        font-size: 14px;
+    }
+}

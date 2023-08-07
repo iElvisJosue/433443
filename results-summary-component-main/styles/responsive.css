@@ -1,0 +1,19 @@
+@media (width <= 1440px){
+    .Container{
+        width: 100%;
+    }
+}
+@media (width <= 550px){
+    .Container__Card{
+        grid-template-columns: 1fr;
+    }
+    .Container__Card-Left
+    {
+        border-radius: 0 0 30px 30px;
+        gap: 20px;
+    }
+    .Container__Card-Right
+    {
+        gap: 30px;
+    }
+}

@@ -1,0 +1,13 @@
+.Container
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    width: 1440px;
+    min-height: 100vh;
+    height: auto;
+    margin: auto;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

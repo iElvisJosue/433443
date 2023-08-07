@@ -1,0 +1,248 @@
+<<<<<<< HEAD
+.Container__Product--Details
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    padding: 20px;
+
+
+    /* ALIGN (FLEX/GRID) */
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px
+}
+.Details--Company
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--Orange);
+}
+.Details--Title
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-weight: 800;
+    font-size: 50px;
+}
+.Details--Description
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    color: var(--DarkGrayishBlue);
+}
+.Details--Price
+{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.Details--Price--Especial
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-size: 30px;
+    font-weight: 800;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.Details--Price--Discount
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    padding: 2px 5px;
+    color: var(--Orange);
+    background-color: var(--PaleOrange);
+    border-radius: 5px;
+}
+.Details--Price--Normal
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    color: var(--GrayishBlue);
+    font-weight: 700;
+}
+.Details--Buttons
+{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    gap: 20px;
+}
+.Details--Buttons--Add
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    height: 60px;
+    max-height: 60px;
+    min-width: 150px;
+    border-radius: 10px;
+    background-color: var(--LightGrayishBlue);
+    font-weight: 800;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Details--Buttons--Minus,
+.Details--Buttons--Plus
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    background: none;
+    width: 50px;
+    height: 100%;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+
+    /* ALIGN (FLEX/GRID) */
+    display: grid;
+    place-items: center;
+}
+.Details--Buttons--Cart
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 100%;
+    height: 60px;
+    max-height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--Orange);
+    color: var(--White);
+    font-weight: 800;
+    cursor: pointer;
+    transition: .5s ease opacity;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.Details--Buttons--Cart:hover
+{
+    opacity: .7;
+=======
+.Container__Product--Details
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    padding: 20px;
+
+
+    /* ALIGN (FLEX/GRID) */
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px
+}
+.Details--Company
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--Orange);
+}
+.Details--Title
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-weight: 800;
+    font-size: 50px;
+}
+.Details--Description
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    color: var(--DarkGrayishBlue);
+}
+.Details--Price
+{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.Details--Price--Especial
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-size: 30px;
+    font-weight: 800;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.Details--Price--Discount
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    padding: 2px 5px;
+    color: var(--Orange);
+    background-color: var(--PaleOrange);
+    border-radius: 5px;
+}
+.Details--Price--Normal
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    color: var(--GrayishBlue);
+    font-weight: 700;
+}
+.Details--Buttons
+{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    gap: 20px;
+}
+.Details--Buttons--Add
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    height: 60px;
+    max-height: 60px;
+    min-width: 150px;
+    border-radius: 10px;
+    background-color: var(--LightGrayishBlue);
+    font-weight: 800;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Details--Buttons--Minus,
+.Details--Buttons--Plus
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    background: none;
+    width: 50px;
+    height: 100%;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+
+    /* ALIGN (FLEX/GRID) */
+    display: grid;
+    place-items: center;
+}
+.Details--Buttons--Cart
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 100%;
+    height: 60px;
+    max-height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--Orange);
+    color: var(--White);
+    font-weight: 800;
+    cursor: pointer;
+    transition: .5s ease opacity;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.Details--Buttons--Cart:hover
+{
+    opacity: .7;
+>>>>>>> 44ebaf7 (Chalenge completed!)
+}

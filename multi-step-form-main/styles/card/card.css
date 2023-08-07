@@ -1,0 +1,30 @@
+/* IMPORTAMOS LOS ESTILOS DE CARD FORMS */
+@import url('./cardforms.css');
+/* IMPORTAMOS LOS ESTILOS DE CARD STEPS */
+@import url('./cardsteps.css');
+/* IMPORTAMOS LOS ESTILOS DE CARD FORMS INFO */
+@import url('./cardformsinfo.css');
+/* IMPORTAMOS LOS ESTILOS DE CARD FORMS PLAN */
+@import url('./cardformsplan.css');
+/* IMPORTAMOS LOS ESTILOS DE CARD FORMS ADDONS */
+@import url('./cardformsaddons.css');
+/* IMPORTAMOS LOS ESTILOS DE CARD FORMS SUMMARY */
+@import url('./cardformssummary.css');
+/* IMPORTAMOS LOS ESTILOS DE CARD FORMS MODAL */
+@import url('./cardformsmodal.css');
+
+.Container__Card
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    position: relative;
+    width: 900px;
+    min-height: 550px;
+    height: auto;
+    background: var(--White);
+    border-radius: 15px;
+    padding: 20px;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    gap: 20px;
+}

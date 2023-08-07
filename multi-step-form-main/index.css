@@ -1,0 +1,45 @@
+/* IMPORTAMOS LOS ESTILOS DEL CONTAINER */
+@import url('./styles/container/container.css');
+
+/* IMPORTAMOS LOS ESTILOS DEL CARD */
+@import url('./styles/card/card.css');
+
+/* IMPORTAMOS EL RESPONSIVE  */
+@import url('./styles/responsive/responsivecontainer.css');
+@import url('./styles/responsive/responsivecard.css');
+@import url('./styles/responsive/responsivecardsteps.css');
+@import url('./styles/responsive/responsivecardforms.css');
+@import url('./styles/responsive/responsivecardaddons.css');
+@import url('./styles/responsive/responsivecardmodal.css');
+
+:root
+{
+    /* PRIMARY */
+    --MarineBlue: hsl(213, 96%, 18%);
+    --PurplishBlue: hsl(243, 100%, 62%);
+    --PastelBlue: hsl(228, 100%, 84%);
+    --LightBlue: hsl(206, 94%, 87%);
+    --StrawberryRed: hsl(354, 84%, 57%);
+    /* NEUTRAL */
+    --CoolGray: hsl(231, 11%, 63%);
+    --LightGray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: #ffffff;
+}   
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+body
+{
+    background: var(--LightBlue);
+}
+input[type="text"]{
+    outline: none;
+}

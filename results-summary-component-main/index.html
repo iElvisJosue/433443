@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Frontend Mentor | Results summary component</title>
+
+</head>
+
+<body onload="getJSON()">
+
+  <!-- START MAIN CONTAINER -->
+  <main class="Container">
+    <!-- START CONTAINER CARD -->
+    <article class="Container__Card">
+      <!-- START LEFT SIDE CARD -->
+      <section class="Container__Card-Left">
+        <h1 class="Left-Title">Your Result</h1>
+        <span class="Left-Result">
+          <p class="Left-Result-Score">
+            76
+          </p>
+          <p class="Left-Result-100">
+            of 100
+          </p>
+        </span>
+        <h2 class="Left-SubTitle">
+          Great
+        </h2>
+        <p class="Left-Details">
+          Your score higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
+      <!-- START RIGHT SIDE CARD -->
+      <section class="Container__Card-Right">
+        <h1 class="Right-Title">
+          Summary
+        </h1>
+        <div class="Right-Scores">
+        </div>
+        <button class="Right-Button">
+          Continue
+        </button>
+      </section>
+    </article>
+  </main>
+
+  <!-- FUNCTIONS -->
+  <script src="./index.js"></script>
+</body>
+</html>

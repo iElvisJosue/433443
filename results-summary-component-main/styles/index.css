@@ -1,0 +1,44 @@
+/* IMPORTAMOS EL CONTAINER */
+@import url('./container.css');
+/* IMPORTAMOS EL CARD */
+@import url('./card.css');
+/* IMPORTAMOS EL LADO IZQUIERDO DE CARD */
+@import url('./left.css');
+/* IMPORTAMOS EL LADO DERECHO DEL CARD */
+@import url('./right.css');
+/* IMPORTAMOS EL RESPONSIVE */
+@import url('./responsive.css');
+
+:root
+{
+    /* COLORS */
+    --LightRed: hsl(0, 100%, 67%);
+    --OrangeyYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+    /* GRADIENTS */
+    --GradientLightSlateBlue: hsl(252, 100%, 67%);
+    --GradientLightRoyalBlue: hsl(241, 81%, 54%);
+    --GradientVioletBlue: hsla(256, 72%, 46%, 1);
+    --GradientPersianBlue: hsla(241, 72%, 46%, 0);
+    /* NEUTRAL */
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
+    font-size: 18px;
+}
+
+body
+{
+    background: var(--White);    
+}

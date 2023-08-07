@@ -1,0 +1,26 @@
+.Container__Card-Forms-Modal
+{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    display: none;
+}
+/* CLASS ADDED BY JS */
+.Container__Card-Forms-Modal.Show
+{
+    display: flex;
+}
+.Modal-Title
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-size: 24px;
+    color: var(--MarineBlue);
+    font-weight: 700;
+}
+.Modal-Description
+{
+    text-align: center;
+    color: var(--CoolGray);
+}

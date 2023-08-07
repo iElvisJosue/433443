@@ -1,0 +1,248 @@
+<<<<<<< HEAD
+.Container__Header
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 1240px;
+    height: 100px;
+    max-height: 100px;
+    padding: 0 20px;
+    border-bottom: 1px solid #ededed;
+    margin: auto;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+.Container__Header--Logo
+{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.Logo--Menu
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    transform: translateY(2px);
+    cursor: pointer;
+
+    /* ALIGN (FLEX/GRID) */
+    display: none;
+}
+/* CLASS ADDED BY JS */
+.Logo--Menu.Show
+{
+    display: block;
+}
+.Container__Header--Options
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 100%;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Menu--Options
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    height: 100%;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    gap: 40px;
+}
+.Menu--Options li
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    list-style: none;
+    border-bottom: 5px solid var(--White);
+    transition: .5s ease border, color;
+    color: var(--DarkGrayishBlue);
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+
+}
+.Menu--Options li:hover
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    cursor: pointer;
+    border-color: var(--Orange);
+    color: var(--VeryDarkBlue);
+}
+.Menu--CartProfile
+{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.Options--Cart
+{
+    position: relative;
+    cursor: pointer;
+}
+.Options--Cart--Amount
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    background: var(--Orange);    
+    border-radius: 10px;
+    font-size: 10px;
+    color: var(--White);
+    font-weight: 800;
+    text-align: center;
+    opacity: 0;
+    transition: .5s ease opacity;
+}  
+ /*CLASS ADDED BY JS  */
+.Options--Cart--Amount.Show
+{
+    opacity: 1;
+}
+.Options--Profile
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    border: 3px solid var(--White);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    transition: .5s ease border;
+}
+.Options--Profile:hover
+{
+    border: 3px solid var(--Orange);
+    cursor: pointer;
+=======
+.Container__Header
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 1240px;
+    height: 100px;
+    max-height: 100px;
+    padding: 0 20px;
+    border-bottom: 1px solid #ededed;
+    margin: auto;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+.Container__Header--Logo
+{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.Logo--Menu
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    transform: translateY(2px);
+    cursor: pointer;
+
+    /* ALIGN (FLEX/GRID) */
+    display: none;
+}
+/* CLASS ADDED BY JS */
+.Logo--Menu.Show
+{
+    display: block;
+}
+.Container__Header--Options
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 100%;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Menu--Options
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    height: 100%;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    gap: 40px;
+}
+.Menu--Options li
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    list-style: none;
+    border-bottom: 5px solid var(--White);
+    transition: .5s ease border, color;
+    color: var(--DarkGrayishBlue);
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+
+}
+.Menu--Options li:hover
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    cursor: pointer;
+    border-color: var(--Orange);
+    color: var(--VeryDarkBlue);
+}
+.Menu--CartProfile
+{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.Options--Cart
+{
+    position: relative;
+    cursor: pointer;
+}
+.Options--Cart--Amount
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    background: var(--Orange);    
+    border-radius: 10px;
+    font-size: 10px;
+    color: var(--White);
+    font-weight: 800;
+    text-align: center;
+    opacity: 0;
+    transition: .5s ease opacity;
+}  
+ /*CLASS ADDED BY JS  */
+.Options--Cart--Amount.Show
+{
+    opacity: 1;
+}
+.Options--Profile
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    border: 3px solid var(--White);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    transition: .5s ease border;
+}
+.Options--Profile:hover
+{
+    border: 3px solid var(--Orange);
+    cursor: pointer;
+>>>>>>> 44ebaf7 (Chalenge completed!)
+}

@@ -1,0 +1,28 @@
+<<<<<<< HEAD
+.Container__Product
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 1240px;
+    height: auto;
+    padding: 70px;
+    margin: auto;
+
+    /* ALIGN (FLEX/GRID) */
+    display: grid;
+    grid-template-columns: 500px auto;
+    gap: 100px;
+=======
+.Container__Product
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 1240px;
+    height: auto;
+    padding: 70px;
+    margin: auto;
+
+    /* ALIGN (FLEX/GRID) */
+    display: grid;
+    grid-template-columns: 500px auto;
+    gap: 100px;
+>>>>>>> 44ebaf7 (Chalenge completed!)
+}

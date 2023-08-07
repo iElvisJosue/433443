@@ -1,0 +1,71 @@
+.Container__Card-Left
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    grid-column: span 1;
+    padding: 30px 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(
+        to bottom,
+        var(--GradientLightSlateBlue),
+        var(--GradientLightRoyalBlue)
+    );
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.Left-Title
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    font-size: 25px;
+    color: var(--LightLavender);
+    font-weight: 500;
+}
+.Left-Result
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    min-width: 170px;
+    min-height: 170px;
+    border-radius: 50%;
+    background-image: linear-gradient(
+        to bottom,
+        var(--GradientVioletBlue),
+        var(--GradientPersianBlue)
+    );
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Left-Result-Score
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    font-size: 50px;
+    color: var(--White);
+    font-weight: 800;
+}
+.Left-Result-100
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    color: var(--LightLavender);
+    font-weight: 500;
+}
+.Left-SubTitle
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    font-size: 30px;
+    color: var(--White);
+    font-weight: 700;
+}
+.Left-Details
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    max-width: 70%;
+    text-align: center;
+    color: var(--LightLavender);
+    font-weight: 500;
+}

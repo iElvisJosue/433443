@@ -1,0 +1,100 @@
+.Container__Card-Forms-Addons
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    height: auto;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    display: none;
+}
+/* CLASS ADDED BY JS */
+.Container__Card-Forms-Addons.Show
+{
+    display: flex;
+}
+.Addons-Section
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    height: auto;
+    border: 1px solid var(--CoolGray);
+    border-radius: 10px;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+}
+.Addons-Section-Check
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    min-width: 75px;
+    min-height: 75px;
+    height: auto;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Check-Online,
+.Check-Storage,
+.Check-Customizable
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: var(--White);
+    border: 1px solid var(--CoolGray);
+    transition: .5s background-color, border-color;
+    cursor: pointer;
+    
+    background-image: url('../../images/icon-checkmark.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.Check-Online:checked,
+.Check-Storage:checked,
+.Check-Customizable:checked
+{
+    background-color: var(--PurplishBlue);
+    border-color: var(--PurplishBlue);
+}
+.Addons-Section.Checked
+{
+    border-color: var(--PurplishBlue);
+    background-color: var(--Alabaster);
+}
+.Addons-Section-Text
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 100%;
+    min-height: 75px;
+    height: auto;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.Section-Title
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--MarineBlue);
+}
+.Section-Details
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    color: var(--CoolGray);
+}
+.Addons-Section-Prize
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    min-width: 75px;
+    color: var(--PurplishBlue);
+}

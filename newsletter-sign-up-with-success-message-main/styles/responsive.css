@@ -1,0 +1,41 @@
+/* RESPONSIVE DESIGN */
+@media (width < 1440px){
+    .Container{
+        /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+        width: 100%;
+    }
+}
+@media (width <= 750px){
+    .Container{
+        /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+        min-height: 100vh;
+        height: auto;
+        align-items: flex-start;
+        background: white;
+    }
+    .Container__Card{
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+        border-radius: 0;
+        padding: 0;
+        gap: 20px;
+    }
+    .Container__Card-Form{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .Container__Card-Form-Image{
+        width: 100%;
+        min-height: 250px;
+        border-radius: 0 0 20px 20px;
+        background-image: url('../images/illustration-sign-up-mobile.svg');
+    }
+    .Container__Modal{
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        border-radius: 0;
+        justify-content: space-between;            
+    }
+}

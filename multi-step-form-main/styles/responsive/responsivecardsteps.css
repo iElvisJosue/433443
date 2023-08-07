@@ -1,0 +1,18 @@
+@media (width <= 910px){
+    .Container__Card-Steps
+    {
+        width: 100%;
+        height: 180px;
+        border-radius: 0;
+        background-image: url('../../images/bg-sidebar-mobile.svg');
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 25px;
+        gap: 20px;
+    }
+    .Container__Card-Steps-List-Text
+    {
+        display: none;
+    }
+}

@@ -1,0 +1,96 @@
+/* SECTION CARD FORMS */
+.Container__Card-Forms 
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 590px;
+    padding: 0 60px;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+/* CLASS ADDED BY JS */
+.Container__Card-Forms.Center
+{
+    justify-content: center;
+}
+
+/* SECTION CARD FORMS HEADER */
+.Container__Card-Forms-Header
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    margin-top: 40px;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.Container__Card-Forms-Title 
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--MarineBlue);
+}
+.Container__Card-Forms-Details 
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    color: var(--CoolGray);
+}
+
+/* SECTION CARD FORMS FOOTER */
+.Container__Card-Forms-Footer
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    background: var(--White);
+
+    /* ALIGN (FLEX/GRID) */
+    justify-content: space-between;
+    display: flex;
+}
+.Footer-Button-Back{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--MarineBlue);
+    font-weight: 700;
+    cursor: pointer;
+    transform: scale(0);
+}
+.Footer-Button-Back.Show
+{
+    transform: scale(1);
+}
+.Footer-Button-Next
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 120px;
+    height: 50px;
+    background: var(--MarineBlue);
+    color: var(--White);
+    font-weight: 700;
+    border-radius: 10px;
+    border: 2px solid var(--MarineBlue);
+    outline: none;
+    transition: .5s ease background, color;
+}
+.Footer-Button-Next:hover
+{   
+    cursor: pointer;
+    background: white;
+    color: var(--MarineBlue);
+}
+.Footer-Button-Next.Confirm
+{
+    background: var(--PurplishBlue);
+    border: 2px solid var(--PurplishBlue);
+}
+.Footer-Button-Next.Confirm:hover
+{   
+    background: white;
+    color: var(--PurplishBlue);
+}

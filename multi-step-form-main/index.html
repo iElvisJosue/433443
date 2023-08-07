@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Multi-step form</title>
+</head>
+<body>
+    <!-- START CONTAINER -->
+    <main class="Container">
+      <!-- START CARD -->
+      <section class="Container__Card">
+        <aside class="Container__Card-Steps">
+          <div class="Container__Card-Steps-List">
+            <span class="Container__Card-Steps-List-Number">
+              1
+            </span>
+            <span class="Container__Card-Steps-List-Text">
+              <p>STEP 1</p>
+              <p>YOUR INFO</p>
+            </span>
+          </div>
+          <div class="Container__Card-Steps-List">
+            <span class="Container__Card-Steps-List-Number">
+              2
+            </span>
+            <span class="Container__Card-Steps-List-Text">
+              <p>STEP 2</p>
+              <p>SELECT PLAN</p>
+            </span>
+          </div>
+          <div class="Container__Card-Steps-List">
+            <span class="Container__Card-Steps-List-Number">
+              3
+            </span>
+            <span class="Container__Card-Steps-List-Text">
+              <p>STEP 3</p>
+              <p>ADD-ONS</p>
+            </span>
+          </div>
+          <div class="Container__Card-Steps-List">
+            <span class="Container__Card-Steps-List-Number">
+              4
+            </span>
+            <span class="Container__Card-Steps-List-Text">
+              <p>STEP 4</p>
+              <p>SUMMARY</p>
+            </span>
+          </div>
+        </aside>
+        <aside class="Container__Card-Forms">
+          <header class="Container__Card-Forms-Header">
+            <p class="Container__Card-Forms-Title">
+            </p>
+            <p class="Container__Card-Forms-Details">
+            </p>
+          </header>
+          <!-- START STEP INFO -->
+          <article class="Container__Card-Forms-Info">
+            <span class="Info-Section">
+              <p class="Info-Section-Title">
+                Name
+                <b class="Info-Section-Caution">This field is requiered</b>
+              </p>
+              <input type="text" placeholder="e.g. Stephen King" class="Info-Section-Input">
+            </span>
+            <span class="Info-Section">
+              <p class="Info-Section-Title">
+                Email Address
+                <b class="Info-Section-Caution">This field is requiered</b>
+              </p>
+              <input type="text" placeholder="e.g. stephenking@lorem.com" class="Info-Section-Input">
+            </span>
+            <span class="Info-Section">
+              <p class="Info-Section-Title">
+                Phone Number
+                <b class="Info-Section-Caution">This field is requiered</b>
+              </p>
+              <input type="text" placeholder="e.g. +1 234 567 890" class="Info-Section-Input" maxlength="16">
+            </span>
+          </article>
+          <!-- START STEP PLAN -->
+          <article class="Container__Card-Forms-Plan">
+            <div class="Plan-Options">
+              <span class="Plan-Options-Item" id="Arcade">
+                <div class="Item-Icon">
+                  <img src="./images/icon-arcade.svg" alt="Plan Arcade">
+                </div>
+                <div class="Item-Details">
+                  <p class="Item-Details-Title">Arcade</p>
+                  <p class="Item-Details-Price">$9/mo</p>
+                  <p class="Item-Details-Deal">2 months free</p>
+                </div>
+              </span>
+              <span class="Plan-Options-Item" id="Advanced">
+                <div class="Item-Icon">
+                  <img src="./images/icon-advanced.svg" alt="Plan Advanced">
+                </div>
+                <div class="Item-Details">
+                  <p class="Item-Details-Title">Advanced</p>
+                  <p class="Item-Details-Price">$12/mo</p>
+                  <p class="Item-Details-Deal">2 months free</p>
+                </div>
+              </span>
+              <span class="Plan-Options-Item" id="Pro">
+                <div class="Item-Icon">
+                  <img src="./images/icon-pro.svg" alt="Plan Pro">
+                </div>
+                <div class="Item-Details">
+                  <p class="Item-Details-Title">Pro</p>
+                  <p class="Item-Details-Price">$15/mo</p>
+                  <p class="Item-Details-Deal">2 months free</p>
+                </div>
+              </span>
+            </div>
+            <div class="Plan-Type">
+              <span class="Plan-Type-Monthly">
+                Monthly
+              </span>
+              <button class="Plan-Type-Button"></button>
+              <span class="Plan-Type-Yearly">
+                Yearly
+              </span>
+            </div>
+          </article>
+          <!-- START STEP ADD-ONS -->
+          <article class="Container__Card-Forms-Addons">
+            <div class="Addons-Section">
+              <span class="Addons-Section-Check">
+                <input type="checkbox" name="Online" id="Online service" class="Check-Online">
+              </span>
+              <div class="Addons-Section-Text">
+                <p class="Section-Title">Online service</p>
+                <p class="Section-Details">Access to multiplayer games</p>
+              </div>
+              <span class="Addons-Section-Prize">
+                +$1/mo
+              </span>
+            </div>
+            <div class="Addons-Section">
+              <span class="Addons-Section-Check">
+                <input type="checkbox" name="Storage" id="Larger storage" class="Check-Storage">
+              </span>
+              <div class="Addons-Section-Text">
+                <p class="Section-Title">Larger storage</p>
+                <p class="Section-Details">Extra 1TB of cloud sabe</p>
+              </div>
+              <span class="Addons-Section-Prize">
+                +$2/mo
+              </span>
+            </div>
+            <div class="Addons-Section">
+              <span class="Addons-Section-Check">
+                <input type="checkbox" name="Customizable" id="Customizable profile" class="Check-Customizable">
+              </span>
+              <div class="Addons-Section-Text">
+                <p class="Section-Title">Customizable profile</p>
+                <p class="Section-Details">Custom theme on your profile</p>
+              </div>
+              <span class="Addons-Section-Prize">
+                +$2/mo
+              </span>
+            </div>
+          </article>
+          <!-- START STEP SUMMARY -->
+          <article class="Container__Card-Forms-Summary">
+            <section class="Summary-Container">
+              <div class="Summary-Details">
+                <span class="Summary-Details-Plan">
+                  <p class="Plan-Name">
+                  </p>
+                  <u class="Plan-Change">Change</u>
+                </span>
+                <span class="Plan-Prize">
+                </span>
+              </div>
+              <hr>
+            </section>
+            <section class="Summary-Services">
+            </div>
+            </section>
+            <div class="Summary-Total">
+              <span class="Summary-Total-Text">
+              </span>
+              <span class="Service-Total-Prize">
+              </span>
+            </div>
+          </article>
+          <!-- START MESSAGE MODAL THANK YOU -->
+          <article class="Container__Card-Forms-Modal">
+            <img src="./images/icon-thank-you.svg" alt="Thank you icon">
+            <h1 class="Modal-Title">
+              Thank You!
+            </h1>
+            <p class="Modal-Description">
+              Thanks for confirming your suscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com
+            </p>
+          </article>
+          <footer class="Container__Card-Forms-Footer">
+            <button class="Footer-Button-Back">
+              Go Back
+            </button>
+            <button class="Footer-Button-Next">
+              Next Step
+            </button>
+          </footer>
+        </aside>
+      </section>
+    </main>
+
+    <!-- FUNCTIONS -->
+    <script type="module" src="./functions/general.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+.Container__Card-Right
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    grid-column: span 1;
+    padding: 30px 20px;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Right-Title
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    font-size: 25px;
+    color: var(--DarkGrayBlue);
+    font-weight: 800;
+    text-align: start;
+}
+.Right-Scores
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    height: auto;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Right-Scores-List
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    min-height: 60px;
+    padding: 0 15px;
+    border-radius: 15px;
+    transition: .5s ease border-color;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Right-Scores-List:nth-child(1)
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    border: 1px solid #fff6f5;
+    background: #fff6f5;
+}
+.Right-Scores-List:nth-child(1) .Right-Scores-Name
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    color: var(--LightRed);
+}
+.Right-Scores-List:nth-child(1):hover
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    cursor: pointer;
+    border-color: var(--LightRed);
+}
+.Right-Scores-List:nth-child(2)
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    border: 1px solid #fffbf2;
+    background: #fffbf2;
+}
+.Right-Scores-List:nth-child(2) .Right-Scores-Name
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    color: var(--OrangeyYellow);
+}
+.Right-Scores-List:nth-child(2):hover
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    cursor: pointer;
+    border-color: var(--OrangeyYellow);
+}
+.Right-Scores-List:nth-child(3)
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    border: 1px solid #f4fbfb;
+    background: #f4fbfb;
+}
+.Right-Scores-List:nth-child(3) .Right-Scores-Name
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    color: var(--GreenTeal);
+}
+.Right-Scores-List:nth-child(3):hover
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    cursor: pointer;
+    border-color: var(--GreenTeal);
+}
+.Right-Scores-List:nth-child(4)
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    border: 1px solid #f3f3fe;
+    background: #f3f3fe;
+}
+.Right-Scores-List:nth-child(4) .Right-Scores-Name
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    color: var(--CobaltBlue);
+}
+.Right-Scores-List:nth-child(4):hover
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    cursor: pointer;
+    border-color: var(--CobaltBlue);
+}
+.Right-Scores-Name
+{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Right-Scores-Points
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    color: rgba(128, 128, 128, 0.715);
+    font-weight: 700;
+}
+.Right-Scores-Points b
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    color: var(--DarkGrayBlue);
+    font-weight: 800;
+}
+.Right-Button
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    min-height: 60px;
+    background: var(--DarkGrayBlue);
+    border-radius: 30px;
+    border: none;
+    color: var(--White);
+}
+.Right-Button:hover
+{
+    /* DESIGN (W-H, COLORS, FONT, ETC */
+    cursor: pointer;
+    background-image: linear-gradient(
+        to bottom,
+        var(--GradientLightSlateBlue),
+        var(--GradientLightRoyalBlue)
+    );
+}

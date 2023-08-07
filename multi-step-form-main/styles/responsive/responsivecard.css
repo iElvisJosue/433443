@@ -1,0 +1,10 @@
+@media (width <= 910px){
+    .Container__Card
+    {
+        gap: 0;
+        padding: 0;
+        border-radius: 0;
+        flex-direction: column;
+        background: var(--Magnolia);
+    }
+}

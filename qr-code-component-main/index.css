@@ -1,0 +1,100 @@
+:root
+{
+    --White: #ffffff;
+    --LightGray: hsl(212, 45%, 89%);
+    --DarkBlue: hsl(218, 44%, 22%);
+    --GrayishBlue: hsl(220, 15%, 55%);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    background: var(--LightGray);
+}
+/* SECTION MAIN CONTAINER */
+.Container{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    margin: auto;
+    width: 1440px;
+    height: 100vh;
+    background: var(--LightGray);
+
+    /* ALIGN (FLEX/GRID) */
+    display: grid;
+    place-content: center;
+}
+
+
+
+/* SECTION CARDQR */
+.Container__CardQR{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 350px;
+    min-height: 400px;
+    height: auto;
+    background: var(--White);
+    border-radius: 20px;
+    padding: 20px 20px 40px 20px;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+/* SECTION CARDQR IMAGE */
+.Container__CardQR-Image{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    height: 300px;
+}
+.Container__CardQR-Image img{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+
+/* SECTION TEXT CARDQR */
+.Container__CardQR-Title{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--DarkBlue);
+}
+.Container__CardQR-SubTitle{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-weight: 400;
+    text-align: center;
+    color: var(--GrayishBlue);
+}
+
+
+
+/* RESPONSIVE DESIGN */
+@media (width < 1440px){
+    .Container{
+        /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        padding: 60px 20px;
+    }
+}
+@media (width <= 375px){
+    .Container__CardQR{
+        /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+        width: 100%;
+    }
+}
