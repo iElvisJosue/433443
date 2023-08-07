@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .Container
 {
     /* DESIGN (W-H | FONT | COLORS | BG | ETC..) */
@@ -8,15 +8,4 @@
     height: auto;
     margin: auto;
     overflow: hidden;
-=======
-.Container
-{
-    /* DESIGN (W-H | FONT | COLORS | BG | ETC..) */
-    position: relative;
-    width: 1440px;
-    min-height: 100vh;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
->>>>>>> 44ebaf7 (Chalenge completed!)
 }

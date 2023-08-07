@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .Container__Menu
 {
     /* DESIGN (PX-WH-COLORS-BG-ETC..) */
@@ -44,51 +43,4 @@
 .Container__Menu--Content li:hover
 {
     cursor: pointer;
-=======
-.Container__Menu
-{
-    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
-    position: fixed;
-    width: 100%;
-    left: -100%;
-    min-height: 100vh;
-    height: auto;
-    background: transparent;
-    z-index: 1000;
-
-    transition: .2s ease all;
-}
-.Container__Menu.Show
-{
-    left: 0;
-    opacity: 1;
-    background: rgba(0, 0, 0, .8);
-}
-.Container__Menu--Content
-{
-    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
-    width: 65%;
-    min-height: 100vh;
-    height: auto;
-    background: var(--White);
-    padding: 20px;
-    list-style: none;
-
-    /* ALIGN (FLEX/GRID) */
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.Container__Menu--Content li
-{
-    font-weight: 800;
-}
-.Container__Menu--Content li:nth-child(1)
-{
-    margin-bottom: 20px;
-}
-.Container__Menu--Content li:hover
-{
-    cursor: pointer;
->>>>>>> 44ebaf7 (Chalenge completed!)
 }

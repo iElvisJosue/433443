@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* IMPORTAMOS EL COVER */
 @import url('./styles/cover.css');
 /* IMPORTAMOS EL CONTAINER */
@@ -40,54 +39,3 @@
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 16px;
 }
-/* 
-- Mobile: 375px
-- Desktop: 1440px 
-*/
-=======
-/* IMPORTAMOS EL COVER */
-@import url('./styles/cover.css');
-/* IMPORTAMOS EL CONTAINER */
-@import url('./styles/container.css');
-/* IMPORTAMOS EL MENU */
-@import url('./styles/menu.css');
-/* IMPORTAMOS EL CART MODAL */
-@import url('./styles/cart.css');
-/* IMPORTAMOS EL MODAL */
-@import url('./styles/modal.css');
-/* IMPORTAMOS EL HEADER */
-@import url('./styles/header.css');
-/* IMPORTAMOS EL PRODUCT */
-@import url('./styles/product.css');
-/* IMPORTAMOS EL PRODUCT IMAGE */
-@import url('./styles/productimage.css');
-/* IMPORTAMOS EL PRODUCT DETAILS */
-@import url('./styles/productdetails.css');
-/* IMPORTAMOS EL RESPONSIVE */
-@import url('./styles/responsive.css');
-:root
-{
-    /* PRIMARY COLORS */
-    --Orange: hsl(26, 100%, 55%);
-    --PaleOrange: hsl(25, 100%, 94%);
-    /* NEUTRAL COLORS */
-    --VeryDarkBlue: hsl(220, 13%, 13%);
-    --DarkGrayishBlue: hsl(219, 9%, 45%);
-    --GrayishBlue: hsl(220, 14%, 75%);
-    --LightGrayishBlue: hsl(223, 64%, 98%);
-    --White: #ffffff;
-    --BlackBG: hsl(0, 0%, 0%);
-}
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: 16px;
-}
-/* 
-- Mobile: 375px
-- Desktop: 1440px 
-*/
->>>>>>> 44ebaf7 (Chalenge completed!)
