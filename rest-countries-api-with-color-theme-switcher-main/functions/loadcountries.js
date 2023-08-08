@@ -56,7 +56,7 @@ let countries
 
 // CON ESTA FUNCION OBTENEMOS TODOS LOS PAISES DE LA API LOCAL
 async function loadCountries() {
-    const response = await fetch('../functions/data.json')
+    const response = await fetch('../api/data.json')
     countries = await response.json()
 
     showAllCountries()
