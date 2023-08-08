@@ -18,8 +18,8 @@ This is a solution to the [REST Countries API with color theme switcher challeng
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/iElvisJosue/FrontEnd-Mentor-Challenges/tree/main/rest-countries-api-with-color-theme-switcher-main)
-- Live Site URL: [Page](https://ielvisjosue.github.io/FrontEnd-Mentor-Challenges/rest-countries-api-with-color-theme-switcher-main)
+- Solution URL: [Solution](https://github.com/iElvisJosue/Frontend_Mentor_Challenges/tree/main/rest-countries-api-with-color-theme-switcher-main)
+- Live Site URL: [Page](https://ielvisjosue.github.io/Frontend_Mentor_Challenges/rest-countries-api-with-color-theme-switcher-main/)
 
 ## My process
 
