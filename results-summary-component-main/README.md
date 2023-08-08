@@ -17,8 +17,8 @@ This is a solution to the [Results summary component](https://www.frontendmentor
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/iElvisJosue/FrontEnd-Mentor-Challenges/tree/main/results-summary-component-main)
-- Live Site URL: [Page](https://ielvisjosue.github.io/FrontEnd-Mentor-Challenges/results-summary-component-main)
+- Solution URL: [Solution](https://github.com/iElvisJosue/Frontend_Mentor_Challenges/tree/main/results-summary-component-main)
+- Live Site URL: [Page](https://ielvisjosue.github.io/Frontend_Mentor_Challenges/results-summary-component-main/)
 
 ## My process
 
