@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="index.css">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Countries</title>
+</head>
+<body onload="checkDarkMode(), loadCountries()">
+
+    <!-- START CONTAINER -->
+    <main class="Container">
+        
+        <!-- START HEARDER -->
+        <header class="Container__Header">
+            <h1 class="Container__Header--Title">
+                Where in the world?
+            </h1>
+            <span class="Container__Header--DarkMode" onclick="setDarkMode()">
+                <ion-icon name="moon-outline" role="img" class="DarkMode--Off"></ion-icon>
+                <ion-icon name="moon" role="img" class="DarkMode--On"></ion-icon>
+                Dark Mode
+            </span>
+        </header>
+        <!-- END HEADER -->
+
+        <!-- START NAV INPUTS -->
+        <nav class="Container__Inputs">
+            <div class="Container__Inputs--Search">
+                <input type="text" name="" id="SearchCountries" class="Container__Inputs--Search--Text" placeholder="Search for a country..." onkeyup="filterCountriesBySearch()">
+                <ion-icon name="search" role="img" class="Container__Inputs--Search--Icon"></ion-icon>
+                <ion-icon name="trash" role="img" class="Container__Inputs--Search--Clear" onclick="clearFilterCountriesBySearch()"></ion-icon>
+            </div>
+            <div class="Container__Inputs--Filter">
+                <button class="Container__Inputs--Filter--Button" onclick="showFilterList()">
+                    Filter by Region
+                    <ion-icon name="chevron-down" role="img"></ion-icon>
+                </button>
+                <ul class="Container__Inputs--Filter--Region">
+                    <li onclick="filterCountriesByRegion('Africa')">Africa</li>
+                    <li onclick="filterCountriesByRegion('Americas')">Americas</li>
+                    <li onclick="filterCountriesByRegion('Asia')">Asia</li>
+                    <li onclick="filterCountriesByRegion('Europe')">Europe</li>
+                    <li onclick="filterCountriesByRegion('Oceania')">Oceania</li>
+                </ul>
+            </div>
+        </nav>
+        <!-- END NAV INPUTS -->
+
+        <!-- START CONTENT -->
+        <section class="Container__Content">
+        </section>
+        <!-- END CONTENT -->
+
+        <!-- START COUNTRY DETAILS -->
+        <section class="Container__Countrie">
+            <button class="Container__Countrie--Back" onclick="hiddeCountrieSelected()">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+                Back
+            </button>
+            <article class="Container__Countrie--Details">
+                <figure class="Container__Countrie--Details--Image">
+                    <img src="" alt="Countrie Flag" class="Container__Countrie--Details--Image-Flag">
+                </figure>
+                <div class="Container__Countrie--Details--Text">
+                    <h1 class="Container__Countrie--Details--Text--Name">
+                        Name
+                    </h1>
+                    <div class="Container__Countrie--Details--Data">
+                        <span class="Container__Countrie--Details--Data--Left">
+                            <p class="Container__Countrie--Details--Data--Left--Native">
+                                <b>Native Name:</b> Name
+                            </p>
+                            <p class="Container__Countrie--Details--Data--Left--Population">
+                                <b>Population:</b> Amount
+                            </p>
+                            <p class="Container__Countrie--Details--Data--Left--Region">
+                                <b>Region:</b> Name
+                            </p>
+                            <p class="Container__Countrie--Details--Data--Left--SubRegion">
+                                <b>Sub Region:</b> Name
+                            </p>
+                            <p class="Container__Countrie--Details--Data--Left--Capital">
+                                <b>Capital:</b> Name
+                            </p>
+                        </span>
+                        <span class="Container__Countrie--Details--Data--Right">
+                            <p class="Container__Countrie--Details--Data--Right--Domain">
+                                <b>Top Level Domain:</b> Name
+                            </p>
+                            <p class="Container__Countrie--Details--Data--Right--Currencies">
+                                <b>Currencies:</b> Name
+                            </p>
+                            <p class="Container__Countrie--Details--Data--Right--Languajes">
+                                <b>Languages:</b> Names
+                            </p>
+                        </span>
+                    </div>
+                    <div class="Container__Countrie--Details--Border">
+                        <p class="Container__Countrie--Details--Border--Text">
+                            Border Countries:
+                        </p>
+                        <div class="Container__Countrie--Details--Border--Buttons">
+                            <button class="Container__Countrie--Details--Border--Button">
+                                Argentina
+                            </button>
+                            <button class="Container__Countrie--Details--Border--Button">
+                                Argentina
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- END COUNTRY DETAILS -->
+
+    </main>
+    <!-- END CONTAINER -->
+
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- FUNCTIONS -->
+    <script src="./functions/darkmode.js"></script>
+    <script src="./functions/loadcountries.js"></script>
+    <script src="./functions/inputs.js"></script>
+</body>
+</html>

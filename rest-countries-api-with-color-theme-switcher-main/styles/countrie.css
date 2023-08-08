@@ -1,0 +1,140 @@
+.Container__Countrie
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    position: fixed;
+    top: 75px;
+    width: 1440px;
+    height: 100vh;
+    margin: auto;
+    padding: 75px 100px;
+    overflow: auto;
+    background: var(--BackgroundColor);
+    opacity: 0;
+    transform: scale(0);
+    transition: .3s ease-in-out all;
+
+    z-index: 1000;
+}
+.Container__Countrie::-webkit-scrollbar
+{
+    display: none;
+}
+.Container__Countrie--Back
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 140px;
+    height: 40px;
+    background: var(--BackgroundElements); 
+    border: none;
+    box-shadow: var(--BoxShadowInputs);
+    border-radius: var(--Radius);
+    cursor: pointer;
+    font-weight: 600;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.Container__Countrie--Details
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    margin: 75px 0;
+    height: auto;
+    /* ALIGN (FLEX/GRID) */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.Container__Countrie--Details--Image
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    grid-column: span 1;
+    height: 400px;
+}
+.Container__Countrie--Details--Image-Flag
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 100%;
+    height: 100%;
+}
+.Container__Countrie--Details--Text
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    grid-column: span 1;
+    padding: 0 0 0 100px;
+    min-height: 400px;
+    height: auto;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+.Container__Countrie--Details--Text--Name
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-size: 30px;
+    font-weight: 800;
+}
+.Container__Countrie--Details--Data
+{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    justify-content: space-between;
+}
+.Container__Countrie--Details--Data--Left,
+.Container__Countrie--Details--Data--Right
+{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Container__Countrie--Details--Data--Left * b,
+.Container__Countrie--Details--Data--Right * b
+{
+    font-weight: 600;
+}
+.Container__Countrie--Details--Border
+{
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    gap: 10px;
+}
+.Container__Countrie--Details--Border--Text
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    min-width: 120px;
+    font-weight: 600;
+}
+.Container__Countrie--Details--Border--Buttons
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 100%;
+
+    /* ALIGN (FLEX/GRID) */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+}
+.Container__Countrie--Details--Border--Button
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    grid-column: span 1;
+    padding: 5px;
+    border: none;
+    font-weight: 600;
+    background: var(--BackgroundElements); 
+    box-shadow: var(--BoxShadowInputs);
+    border-radius: var(--Radius);
+    cursor: pointer;
+}
+body.Show .Container__Countrie
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    transform: scale(1);
+    opacity: 1;
+}

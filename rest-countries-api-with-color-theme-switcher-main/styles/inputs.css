@@ -1,0 +1,129 @@
+.Container__Inputs
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    padding: 50px 100px;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Container__Inputs--Search
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    position: relative;
+    height: 50px;
+    width: 450px;
+}
+.Container__Inputs--Search--Text
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 100%;
+    height: 100%;
+    padding: 0 35px 0 70px;
+    background: var(--BackgroundElements);
+    border-radius: var(--Radius);
+    box-shadow: var(--BoxShadowInputs);
+    border: none;
+    color: var(--Input);
+    font-weight: 600;
+}
+
+.Container__Inputs--Search--Text::placeholder
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    color: var(--Input);
+    font-weight: 600;
+}
+.Container__Inputs--Search--Icon
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    position: absolute;
+    color: var(--Input);
+    top: calc(50% - 9px);
+    left: 26px;
+    cursor: pointer;
+}
+.Container__Inputs--Search--Clear
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    position: absolute;
+    color: var(--Input);
+    top: calc(50% - 9px);
+    right: 26px;
+    cursor: pointer;
+    opacity: 0;
+    transform: scale(0);
+
+    transition: .5s ease-in-out all;
+}
+.Container__Inputs--Search--Clear.Show
+{
+    opacity: 1;
+    transform: scale(1);
+}
+.Container__Inputs--Filter
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    position: relative;
+    width: 200px;
+    height: 50px;
+}
+.Container__Inputs--Filter--Button
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-weight: 600;
+    background: var(--BackgroundElements); 
+    box-shadow: var(--BoxShadowInputs);
+    border-radius: var(--Radius);
+    cursor: pointer;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Container__Inputs--Filter--Region
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    position: absolute;
+    top: calc(100% + 5px);
+    width: 100%;
+    height: 0;
+    border: none;
+    overflow: hidden;
+    font-weight: 600;
+    background: var(--BackgroundElements); 
+    box-shadow: var(--BoxShadowInputs);
+    border-radius: var(--Radius);
+    cursor: pointer;
+    list-style: none;
+    transition: .3s ease-in-out all;
+    z-index: -1;
+    
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    flex-direction: column;
+}
+.Container__Inputs--Filter--Region li
+{
+    padding: 10px 20px;
+    color: transparent;
+    transition: .3s ease-in-out all;
+}
+.Container__Inputs--Filter--Region li:hover
+{
+    background: var(--BackgroundColor);
+}
+.Container__Inputs--Filter--Region.Show
+{
+    height: 195px;
+    z-index: 0;
+}
+.Container__Inputs--Filter--Region.Show li
+{
+    color: var(--Text);
+}

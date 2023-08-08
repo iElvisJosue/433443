@@ -1,0 +1,121 @@
+@media (width <= 1440px){
+    .Container{
+        width: 100%;
+    }
+    .Container__Countrie
+    {
+        width: 100%;
+    }
+}
+@media (width <= 1200px){
+    .Container__Header
+    {
+        padding: 0 50px;
+    }
+    .Container__Inputs
+    {
+        padding: 25px 50px;
+    }
+    .Container__Content
+    {
+        padding: 0 50px 25px 50px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .Container__Countrie
+    {
+        padding: 75px 50px;
+    }
+}
+@media (width <= 900px){
+    .Container__Countrie--Details--Text
+    {
+        padding: 0 0 0 10px;
+    }
+}
+@media (width <= 800px){
+    .Container__Header
+    {
+        padding: 0 40px;
+    }
+    .Container__Inputs
+    {
+        padding: 15px 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .Container__Inputs--Search
+    {
+        width: 100%;
+    }
+    .Container__Inputs--Filter
+    {
+        width: 65%;
+    }
+    .Container__Inputs--Filter--Button
+    {
+        padding: 0 15px;
+        justify-content: space-between;
+    }
+    .Container__Content
+    {
+        padding: 0 40px 15px 40px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .Container__Countrie
+    {
+        padding: 30px 40px;
+    }
+    .Container__Countrie--Details
+    {
+        margin-top: 30px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .Container__Countrie--Details--Text
+    {
+        padding: 0;
+        gap: 30px;
+    }
+    .Container__Countrie--Details--Data
+    {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .Container__Countrie--Details--Border
+    {
+        flex-direction: column;
+    }
+    .Container__Countrie--Details--Image
+    {
+        height: auto;
+    }
+}
+@media (width <= 500px){
+    .Container__Header
+    {
+        padding: 0 20px;
+    }
+    .Container__Inputs
+    {
+        padding: 15px 20px;
+    }
+    .Container__Content{
+        padding: 0 20px 15px 20px;
+        grid-template-columns: 1fr;;
+    }
+    .Container__Content--Countrie figure{
+        height: 250px;
+    }
+    .Container__Countrie
+    {
+        padding: 30px 20px;
+    }
+}
+@media (width <= 400px){
+    .Container__Header--Title
+    {
+        /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+        font-size: var(--Text);
+    }
+}

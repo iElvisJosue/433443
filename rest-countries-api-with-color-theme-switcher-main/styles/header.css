@@ -1,0 +1,39 @@
+.Container__Header
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    position: sticky;
+    top: 0;
+    height: 75px;
+    max-height: 75px;
+    padding: 0 100px;
+    background: var(--BackgroundElements);
+    box-shadow: var(--BoxShadow);
+    z-index: 1000;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Container__Header--Title
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-size: 25px;
+    font-weight: 800;
+}
+.Container__Header--DarkMode
+{
+    /* DESIGN (PX-WH-COLORS-BG-ETC..) */
+    font-weight: 600;
+    cursor: pointer;
+
+    /* ALIGN (FLEX/GRID) */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.DarkMode--On
+{
+    display: none;
+}
