@@ -266,5 +266,5 @@ const clearFilterCountriesBySearch = () => {
     inputSearchClear.classList.remove('Show')
     setTimeout(() => {
         showAllCountries()
-    }, 500);
+    }, 100);
 }
