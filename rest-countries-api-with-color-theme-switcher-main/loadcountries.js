@@ -58,7 +58,7 @@ let countries
 
 // CON ESTA FUNCION OBTENEMOS TODOS LOS PAISES DE LA API LOCAL
 async function loadCountries() {
-    const response = await fetch('https://raw.githubusercontent.com/iElvisJosue/Frontend_Mentor_Challenges/main/rest-countries-api-with-color-theme-switcher-main/api/data.json')
+    const response = await fetch('./data.json')
     countries = await response.json()
 
     showAllCountries()
@@ -66,7 +66,6 @@ async function loadCountries() {
 }
 // CON ESTA FUNCION OBTENDREMOS LAS REGIONES EN LOS FILTROS
 const getFiltersRegions = () => {
-    console.log(countries);
     const allRegions = countries.map(element => {
         return element.region
     })
