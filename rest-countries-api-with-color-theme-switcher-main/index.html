@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&display=swap" rel="stylesheet">
     <title>Frontend Mentor | Countries</title>
 </head>
-<body onload="loadCountries(), checkDarkMode()">
+<body onload="checkDarkMode()">
 
     <!-- START CONTAINER -->
     <main class="Container">
@@ -32,9 +32,9 @@
         <!-- START NAV INPUTS -->
         <nav class="Container__Inputs">
             <div class="Container__Inputs--Search">
-                <input type="text" name="" id="SearchCountries" class="Container__Inputs--Search--Text" placeholder="Search for a country..." onkeyup="filterCountriesBySearch()">
+                <input type="text" name="" id="SearchCountries" class="Container__Inputs--Search--Text" placeholder="Search for a country...">
                 <ion-icon name="search" role="img" class="Container__Inputs--Search--Icon"></ion-icon>
-                <ion-icon name="trash" role="img" class="Container__Inputs--Search--Clear" onclick="clearFilterCountriesBySearch()"></ion-icon>
+                <ion-icon name="trash" role="img" class="Container__Inputs--Search--Clear"></ion-icon>
             </div>
             <div class="Container__Inputs--Filter">
                 <button class="Container__Inputs--Filter--Button" onclick="showFilterList()">
@@ -42,6 +42,7 @@
                     <ion-icon name="chevron-down" role="img"></ion-icon>
                 </button>
                 <ul class="Container__Inputs--Filter--Region">
+                    <li id="allRegions">All</li>
                 </ul>
             </div>
         </nav>
@@ -121,8 +122,12 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- FUNCTIONS -->
-    <script src="./functions/loadcountries.js"></script>
+    <script type="module" src="./functions/getapi.js"></script>
+    <script type="module" src="./functions/consts.js"></script>
+    <script type="module" src="./functions/loadcountries.js"></script>
+    <script type="module" src="./functions/searchcountries.js"></script>
     <script src="./functions/inputs.js"></script>
     <script src="./functions/darkmode.js"></script>
+    <script src="./functions/hiddeselectedcountrie.js"></script>
 </body>
 </html>
