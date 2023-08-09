@@ -26,21 +26,21 @@ export const resetIndexs = () => {
 
 // CON ESTA FUNCION OBTENEMOS UN ARREGLO
 // CON UN LIMITE DE 20 ELEMENTOS
-export const getTwentyCountries = () => {
+export const getTenCountries = () => {
     if(endIndex < allConst.countriesFromApi.length){
-        const twentyCountries = allConst.countriesFromApi.filter((element, index) => {
+        const tenCountries = allConst.countriesFromApi.filter((element, index) => {
             if(index >= startIndex && index <= endIndex){
                 return element
             }
         })
-        showFirstsCountries(twentyCountries)
+        showFirstsCountries(tenCountries)
         checkCountrieObserve()
     }
 }
 
 // CON ESTA VARIABLE AUMENTAMOS EL VALOR DE
 // NUESTROS INDEX EN 20
-export const addTwentyCountries = () => {
+export const addTenCountries = () => {
     startIndex += 10
     endIndex += 10
 }
@@ -112,8 +112,8 @@ export const addFunctionToCountrie = () => {
 export const resetCountries = () => {
     allConst.containerContent.innerHTML = ''
     resetIndexs()
-    getTwentyCountries()
+    getTenCountries()
 }
 
-getTwentyCountries()
+getTenCountries()
 getFiltersRegions()

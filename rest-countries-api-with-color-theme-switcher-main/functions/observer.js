@@ -1,4 +1,4 @@
-import { getTwentyCountries, addTwentyCountries, endIndex } from "./loadcountries.js"
+import { getTenCountries, addTenCountries, endIndex } from "./loadcountries.js"
 import { countriesFromApi } from "./consts.js"
 
 // CREAMOS NUESTRA API DE INTERSECTIONOBSERVER
@@ -22,8 +22,8 @@ function loadContentCountriesObserve(countriesObs){
         countriesObs.forEach((currentlyCountrie) => {
             //VERIFICAMOS SI EL ELEMENTO ESTA SIENDO OBSERVADO
             if(currentlyCountrie.isIntersecting){
-                addTwentyCountries()
-                getTwentyCountries()
+                addTenCountries()
+                getTenCountries()
             }
         })
     }
