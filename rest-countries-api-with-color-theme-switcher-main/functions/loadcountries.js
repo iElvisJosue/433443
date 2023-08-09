@@ -104,11 +104,11 @@ const showAllCountries = () => {
 // CON ESTA FUNCION COLOCAREMOS TODAS LAS CIUDADES
 // EN EL CONTENEDOR
 const setAllCountries = (area, flag, name, population, region, capital) => {
-    const newFlag = flag ? flag : '-'
-    const newName= name ? name: '-'
-    const newPopulation = population ? population : 0
-    const newRegion = region ? region : '-'
-    const newCapital = capital ? capital : '-'
+    const newFlag = flag ? flag : '❌'
+    const newName= name ? name: '❌'
+    const newPopulation = population ? population : '❌'
+    const newRegion = region ? region : '❌'
+    const newCapital = capital ? capital : '❌'
 
     
     return `
@@ -157,14 +157,14 @@ const searchSelectedCountrie = area => {
 // DE LA CIUDAD QUE FUE SELECCIONADA
 const setCountrieSelected = selectedCountrie => {
 
-    const newNativeNameInSelected = selectedCountrie[0].nativeName ? selectedCountrie[0].nativeName : '-'
-    const newPopulationInSelected = selectedCountrie[0].population ? selectedCountrie[0].population : 0
-    const newRegionInSelected = selectedCountrie[0].region ? selectedCountrie[0].region : '-'
-    const newSubRegionlInSelected = selectedCountrie[0].subregion ? selectedCountrie[0].subregion : '-'
-    const newCapitalInSelected = selectedCountrie[0].capital ? selectedCountrie[0].capital : '-'
-    const newDomainInSelected = selectedCountrie[0].topLevelDomain ? selectedCountrie[0].topLevelDomain : '-'
-    const newCurrenciesInSelected = selectedCountrie[0].currencies ? selectedCountrie[0].currencies[0].name : '-'
-    const newLanguagesInSelected = selectedCountrie[0].languages ? selectedCountrie[0].languages : '-'
+    const newNativeNameInSelected = selectedCountrie[0].nativeName ? selectedCountrie[0].nativeName : '❌'
+    const newPopulationInSelected = selectedCountrie[0].population ? selectedCountrie[0].population : '❌'
+    const newRegionInSelected = selectedCountrie[0].region ? selectedCountrie[0].region : '❌'
+    const newSubRegionlInSelected = selectedCountrie[0].subregion ? selectedCountrie[0].subregion : '❌'
+    const newCapitalInSelected = selectedCountrie[0].capital ? selectedCountrie[0].capital : '❌'
+    const newDomainInSelected = selectedCountrie[0].topLevelDomain ? selectedCountrie[0].topLevelDomain : '❌'
+    const newCurrenciesInSelected = selectedCountrie[0].currencies ? selectedCountrie[0].currencies[0].name : '❌'
+    const newLanguagesInSelected = selectedCountrie[0].languages ? selectedCountrie[0].languages : '❌'
     
     selectedCountrieFlag.src = selectedCountrie[0].flags.svg
     selectedCountrieName.innerHTML = selectedCountrie[0].name
@@ -203,8 +203,9 @@ const formaCountriesBorder = countriesBorders => {
                 `
             }
         })
+    }else{
+        return selectedCountrieBorderButtons.innerHTML = '❌'
     }
-    return false
 }
 // CON ESTA FUNCION OCULTAREMOS LA CIUDAD
 // QUE FUE SELECCIONADA PARA VISUALIZAR
