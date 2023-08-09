@@ -18,8 +18,6 @@ const showFilterList = () => {
     regionFilterList.classList.toggle('Show')
 }
 
-regionFilterListLi.forEach(region => {
-    region.addEventListener('click', () => {
-        regionFilterList.classList.toggle('Show')
-    })
-})
+const hiddeFilterList = () => {
+    regionFilterList.classList.toggle('Show')
+}

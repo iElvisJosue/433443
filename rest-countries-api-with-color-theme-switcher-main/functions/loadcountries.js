@@ -44,6 +44,8 @@ const selectedCountrieBorderButtons = document.querySelector('.Container__Countr
 const inputSearchCountrie = document.querySelector('.Container__Inputs--Search--Text')
 // OBTENEMOS EL ICONO DE CERRAR LIMPIAR BUSQUEDA
 const inputSearchClear = document.querySelector('.Container__Inputs--Search--Clear')
+// OBTENEMOS EL INPUT CON LOS FILTROS POR REGION
+const inputRegionFilter = document.querySelector('.Container__Inputs--Filter--Region')
 
 /** 
     FUNCIONES PARA ADMINISTRAR
@@ -60,6 +62,25 @@ async function loadCountries() {
     countries = await response.json()
 
     showAllCountries()
+    getFiltersRegions()
+}
+// CON ESTA FUNCION OBTENDREMOS LAS REGIONES EN LOS FILTROS
+const getFiltersRegions = () => {
+    console.log(countries);
+    const allRegions = countries.map(element => {
+        return element.region
+    })
+
+    setFiltersRegions([...new Set(allRegions)])
+}
+// CON ESTA FUNCION MOSTRAREMOS LAS REGIONES EN LOS FILTROS
+const setFiltersRegions = arrRegions => {
+    arrRegions.forEach(listRegion => [
+        inputRegionFilter.innerHTML += 
+        `
+            <li onclick="filterCountriesByRegion('${listRegion}'), hiddeFilterList()">${listRegion}</li>
+        `
+    ])
 }
 
 // CON ESTA FUNCION MOSTRAREMOS TODOS 
@@ -83,23 +104,30 @@ const showAllCountries = () => {
 // CON ESTA FUNCION COLOCAREMOS TODAS LAS CIUDADES
 // EN EL CONTENEDOR
 const setAllCountries = (area, flag, name, population, region, capital) => {
+    const newFlag = flag ? flag : '-'
+    const newName= name ? name: '-'
+    const newPopulation = population ? population : 0
+    const newRegion = region ? region : '-'
+    const newCapital = capital ? capital : '-'
+
+    
     return `
     <article class="Container__Content--Countrie" onclick="searchSelectedCountrie('${area}')">
         <figure>
-            <img src="${flag}" alt="Flag Argentina" class="Container__Content--Countrie--Flag">
+            <img src="${newFlag}" alt="Flag ${newFlag}" class="Container__Content--Countrie--Flag">
         </figure>
         <div class="Container__Content--Countrie--Details">
             <p class="Container__Content--Countrie--Details--Name">
-                ${name}
+                ${newName}
             </p>
             <p class="Container__Content--Countrie--Details--Population">
-                <b>Population:</b> ${formatPopulation(population)}
+                <b>Population:</b> ${formatPopulation(newPopulation)}
             </p>
             <p class="Container__Content--Countrie--Details--Region">
-                <b>Region:</b> ${region}
+                <b>Region:</b> ${newRegion}
             </p>
             <p class="Container__Content--Countrie--Details--Capital">
-                <b>Capital:</b> ${capital}
+                <b>Capital:</b> ${newCapital}
             </p>
         </div>
     </article>
@@ -128,16 +156,26 @@ const searchSelectedCountrie = area => {
 // CON ESTA FUNCION COLOCAREMOS LA INFORMACION
 // DE LA CIUDAD QUE FUE SELECCIONADA
 const setCountrieSelected = selectedCountrie => {
+
+    const newNativeNameInSelected = selectedCountrie[0].nativeName ? selectedCountrie[0].nativeName : '-'
+    const newPopulationInSelected = selectedCountrie[0].population ? selectedCountrie[0].population : 0
+    const newRegionInSelected = selectedCountrie[0].region ? selectedCountrie[0].region : '-'
+    const newSubRegionlInSelected = selectedCountrie[0].subregion ? selectedCountrie[0].subregion : '-'
+    const newCapitalInSelected = selectedCountrie[0].capital ? selectedCountrie[0].capital : '-'
+    const newDomainInSelected = selectedCountrie[0].topLevelDomain ? selectedCountrie[0].topLevelDomain : '-'
+    const newCurrenciesInSelected = selectedCountrie[0].currencies ? selectedCountrie[0].currencies[0].name : '-'
+    const newLanguagesInSelected = selectedCountrie[0].languages ? selectedCountrie[0].languages : '-'
+    
     selectedCountrieFlag.src = selectedCountrie[0].flags.svg
     selectedCountrieName.innerHTML = selectedCountrie[0].name
-    selectedCountrieNativeName.innerHTML = `<b>Native Name:</b> ${selectedCountrie[0].nativeName}`
-    selectedCountriePopulation.innerHTML = `<b>Population:</b> ${formatPopulation(selectedCountrie[0].population)}`
-    selectedCountrieRegion.innerHTML = `<b>Region:</b> ${selectedCountrie[0].region}`
-    selectedCountrieSubRegion.innerHTML = `<b>Sub Region:</b> ${selectedCountrie[0].subregion}`
-    selectedCountrieCapital.innerHTML = `<b>Capital:</b> ${selectedCountrie[0].capital}`
-    selectedCountrieDomain.innerHTML = `<b>Top Level Domain:</b> ${selectedCountrie[0].topLevelDomain}`
-    selectedCountrieCurrencies.innerHTML = `<b>Currencies:</b> ${selectedCountrie[0].currencies[0].name}`
-    selectedCountrieLanguaje.innerHTML = `<b>Languages:</b> ${formatLanguages(selectedCountrie[0].languages)}`
+    selectedCountrieNativeName.innerHTML = `<b>Native Name:</b> ${newNativeNameInSelected}`
+    selectedCountriePopulation.innerHTML = `<b>Population:</b> ${formatPopulation(newPopulationInSelected)}`
+    selectedCountrieRegion.innerHTML = `<b>Region:</b> ${newRegionInSelected}`
+    selectedCountrieSubRegion.innerHTML = `<b>Sub Region:</b> ${newSubRegionlInSelected}`
+    selectedCountrieCapital.innerHTML = `<b>Capital:</b> ${newCapitalInSelected}`
+    selectedCountrieDomain.innerHTML = `<b>Top Level Domain:</b> ${newDomainInSelected}`
+    selectedCountrieCurrencies.innerHTML = `<b>Currencies:</b> ${newCurrenciesInSelected}`
+    selectedCountrieLanguaje.innerHTML = `<b>Languages:</b> ${formatLanguages(newLanguagesInSelected)}`
     formaCountriesBorder(selectedCountrie[0].borders)
 }
 // CON ESTA FUNCION LE DAREMOS FORMATO A LA CANTIDAD
@@ -206,10 +244,9 @@ const filterCountriesBySearch = () => {
     const nameCountrie = inputSearchCountrie.value
     if(nameCountrie.length > 0){
         countries.forEach(countrieName => {
-            if(countrieName.name.toLowerCase() === nameCountrie.toLowerCase()){
+            if(countrieName.name.toLowerCase().startsWith(nameCountrie.toLowerCase())){
                 inputSearchClear.classList.add('Show')
-                containerContent.innerHTML = ''
-                containerContent.innerHTML += setAllCountries(
+                containerContent.innerHTML = setAllCountries(
                     countrieName.area, 
                     countrieName.flags.png,
                     countrieName.name,
