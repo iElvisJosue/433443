@@ -196,7 +196,7 @@ const formaCountriesBorder = countriesBorders => {
                 currentIndex++
                 selectedCountrieBorderButtons.innerHTML += 
                 `
-                    <button class="Container__Countrie--Details--Border--Button" onclick="searchSelectedCountrie('${allcountries.name}')">
+                    <button class="Container__Countrie--Details--Border--Button" id="${allcountries.name}" onclick="searchSelectedCountrie(this.id)">
                         ${allcountries.name}
                     </button>
                 `
