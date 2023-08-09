@@ -66,7 +66,6 @@ async function loadCountries() {
 }
 // CON ESTA FUNCION OBTENDREMOS LAS REGIONES EN LOS FILTROS
 const getFiltersRegions = () => {
-    console.log(countries);
     const allRegions = countries.map(element => {
         return element.region
     })
