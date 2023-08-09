@@ -109,9 +109,9 @@ const setAllCountries = (area, flag, name, population, region, capital) => {
     const newRegion = region ? region : '❌'
     const newCapital = capital ? capital : '❌'
 
-    
+    // onclick="searchSelectedCountrie('${area}')"
     return `
-    <article class="Container__Content--Countrie" onclick="searchSelectedCountrie('${area}')">
+    <article class="Container__Content--Countrie" id="${newName}" onclick="searchSelectedCountrie(this.id)">
         <figure>
             <img src="${newFlag}" alt="Flag ${newFlag}" class="Container__Content--Countrie--Flag">
         </figure>
@@ -145,10 +145,10 @@ const formatPopulation = population => {
 
 // CON ESTA FUNCION BUSCAREOS LA CIUDAD
 // QUE FUE SELECCIONADA PARA VISUALIZAR
-const searchSelectedCountrie = area => {
+const searchSelectedCountrie = name => {
     body.classList.add('Show')
     const selectedCountrie = countries.filter(element => {
-        return element.area === Number(area) ? element : false
+        return element.name === name ? element : false
     })
     setCountrieSelected(selectedCountrie)
 }
@@ -196,7 +196,7 @@ const formaCountriesBorder = countriesBorders => {
                 currentIndex++
                 selectedCountrieBorderButtons.innerHTML += 
                 `
-                    <button class="Container__Countrie--Details--Border--Button" onclick="searchSelectedCountrie('${allcountries.area}')">
+                    <button class="Container__Countrie--Details--Border--Button" onclick="searchSelectedCountrie('${allcountries.name}')">
                         ${allcountries.name}
                     </button>
                 `
